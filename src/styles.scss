@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+$color-primary: #FA2759;
+$color-secondary: #2DFCD8;
+$color-grey: #1A1A1A;
+$color-black: #000000;
+
+.box{
+    width: 90vw;
+    height: 90vh;
+}
+
+.buttonPrimary{
+    background-color: transparent;
+    color: $color-secondary;
+    width: 200px;
+    height: 100px;
+    border: 2px solid $color-secondary;
+
+
+    &:hover{
+
+        animation: primaryButtonHover 1.5s ease-in-out;
+        color: white;
+        background-color: rgba($color-secondary,0.6);
+        border: 2px solid white;
+    }
+
+}
+
+@keyframes primaryButtonHover {
+    from {
+        color: $color-secondary; 
+        background-color:transparent;
+        border: 2px solid $color-secondary;
+    }
+    to {
+        color: white;
+        background-color: rgba($color-secondary,0.6);
+        border: 2px solid white;
+    }
+}

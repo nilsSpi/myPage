@@ -1,0 +1,43 @@
+$color-primary: #FA2759;
+$color-secondary: #2DFCD8;
+$color-grey: #1A1A1A;
+$color-black: #000000;
+
+.home-container {
+    background-color: $color-black;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    #home-content {
+        display: flex;
+        justify-content: space-between;
+        
+
+        .container {
+            margin-top:10%;
+
+            .text-container {
+                h1{
+                    color: white;
+                    font-size: 42px;
+                }
+            }
+            button {
+                margin-top: 10%;
+            }
+           
+        }
+
+        img {
+            margin-top:10%;
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+       
+    }
+    
+}
