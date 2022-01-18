@@ -12,7 +12,38 @@ $color-black: #000000;
     justify-content: center;
 
     #skills-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: red;
+
+
+
+        .row{
+            display: flex;
+
+            .skill-container{
+                position: relative;
+                background-color:white;
+                height: 150px;
+                width: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .skill-text{
+                    color: green;
+                }
+                .skill-image{
+                    position: absolute;
+                    top: 0;
+                    border: 2px solid rgba($color-black,0.8);
+                    border-radius: 100%;
+                }
+            }
+        }
     }
 
 }
+
