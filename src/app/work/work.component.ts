@@ -6,33 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-  all=[];
+  
+  public allIsShown:boolean = true;
+  public angularIsShown:boolean = false;
+  public jsIsShown:boolean = false;
+  public sourcesAll: string[]=[
+    "assets/img/projectPlaceholder.jpg",
+    "assets/img/projectPlaceholder.jpg",
+    "assets/img/projectPlaceholder.jpg",
+    "assets/img/projectPlaceholder.jpg",
+    "assets/img/projectPlaceholder.jpg",
+    "assets/img/projectPlaceholder.jpg",
+  ];
   
   
   constructor() {
-    this.all = [];
+    
     
    }
 
   ngOnInit(): void {
   }
   showAll(): void {
+    this.allIsShown = true;
     let button = document.getElementById('all');
-    let renderContainer=document.getElementById('render-container');
-    console.log(renderContainer)
    if (button) {
-    console.log(button)
      button.classList.add('toggeld');
-   }
-   if(renderContainer){
-    renderContainer.innerHTML ="";
-    renderContainer.innerHTML += `
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">
-    <img class="work-img" src="assets/img/projectPlaceholder.jpg" alt="">`
    }
    
   }

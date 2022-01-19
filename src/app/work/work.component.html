@@ -9,13 +9,20 @@
             <button id="angular" class="buttonSecondary">Angular</button>
             <button id="js" class="buttonSecondary">JavaScript</button>
         </div>
-        <div id="render-container">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
-            <img src="assets/img/projectPlaceholder.jpg" alt="">
+        <div *ngIf="allIsShown" id="render-container">
+           
+            <div  *ngFor="let src of sourcesAll" class="work-plate">
+                <div class="work-overlay">
+                    <h4 class="hide">El Pollo Loco</h4>
+                    <p class="hide">object oriented js jump and run game</p>
+                    <button class="hide">Try out</button>
+                </div>
+                <img src="{{ src }}" alt="">
+            </div>
+         
+            
+
+            
         </div>
     </div>
 </section>
