@@ -27,6 +27,11 @@ $color-black: #000000;
             }
             button {
                 margin-top: 10%;
+
+                a{
+                    text-decoration: none;
+                    color: $color-secondary;                
+                }
             }
            
         }
