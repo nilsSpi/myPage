@@ -17,6 +17,12 @@ $color-black: #000000;
     width: 90vw;
     height: 90vh;
 }
+.work-img{
+    width: 250px;
+    height: 300px;
+    padding:16px;
+}
+
 
 .buttonPrimary{
     background-color: transparent;
@@ -67,6 +73,68 @@ $color-black: #000000;
 @keyframes primaryAnchorHover {
     from {
         color: $color-secondary; 
+       
+        
+    }
+    to {
+        color: white;     
+    }
+}
+
+
+
+
+
+
+.buttonSecondary{
+    background-color: transparent;
+    color: $color-primary;
+    width: 200px;
+    height: 100px;
+    border: 2px solid $color-primary;
+
+    a{
+        text-decoration: none;
+        color: $color-primary;
+        
+       
+    }
+
+
+    &:hover{
+
+        animation: secondaryButtonHover 1.5s ease-in-out;
+        color: white;
+        background-color: rgba($color-primary,0.6);
+        border: 2px solid white;
+        cursor: pointer;
+
+        a{
+            animation: secondaryAnchorHover 1.5s ease-in-out;
+            background-color: rgba($color-primary,0.6);
+            background-color:transparent;
+            color:white !important;
+        }
+    }
+
+}
+
+@keyframes secondaryButtonHover {
+    from {
+        color: $color-primary; 
+        background-color:transparent;
+        border: 2px solid $color-primary;
+    }
+    to {
+        color: white;
+        background-color: rgba($color-primary,0.6);
+        border: 2px solid white;
+    }
+}
+
+@keyframes secondaryAnchorHover {
+    from {
+        color: $color-primary; 
        
         
     }

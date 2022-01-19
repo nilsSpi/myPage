@@ -1,0 +1,53 @@
+$color-primary: #FA2759;
+$color-secondary: #2DFCD8;
+$color-grey: #1A1A1A;
+$color-black: #000000;
+
+
+
+.work-container{
+    background-color: $color-black;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: 5%;
+        color: white;
+        font-size: 42px;
+    }
+
+    #work-content{
+       margin-top:10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-black;
+
+        #render-container{
+            margin-top:2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 250px;
+                height: 300px;
+                padding:16px;
+            }
+            
+        }
+    }
+}
+
+
+.toggeld{
+    color: white !important;
+        background-color: rgba($color-primary,0.6);
+        border: 2px solid white !important;
+}
