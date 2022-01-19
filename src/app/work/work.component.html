@@ -6,8 +6,8 @@
     <div class="box" id="work-content">
         <div class="button-container">
             <button id="all" (click)="showAll()" class="buttonSecondary">All</button>
-            <button id="angular" class="buttonSecondary">Angular</button>
-            <button id="js" class="buttonSecondary">JavaScript</button>
+            <button id="angular" (click)="showAngular()" class="buttonSecondary">Angular</button>
+            <button id="js" (click)="showJs()" class="buttonSecondary">JavaScript</button>
         </div>
         <div *ngIf="allIsShown" id="render-container">
            
@@ -18,12 +18,33 @@
                     <button class="hide">Try out</button>
                 </div>
                 <img src="{{ src }}" alt="">
-            </div>
-         
-            
-
-            
+            </div> 
         </div>
+
+            <div *ngIf="angularIsShown" id="render-container">
+                <div  *ngFor="let src of sourcesAngular" class="work-plate">
+                    <div class="work-overlay">
+                        <h4 class="hide">El Pollo Loco</h4>
+                        <p class="hide">object oriented js jump and run game</p>
+                        <button class="hide">Try out</button>
+                    </div>
+                    <img src="{{ src }}" alt="">
+                </div>
+            </div>
+
+            <div *ngIf="jsIsShown" id="render-container">
+                <div  *ngFor="let src of sourcesJs" class="work-plate">
+                    <div class="work-overlay">
+                        <h4 class="hide">El Pollo Loco</h4>
+                        <p class="hide">object oriented js jump and run game</p>
+                        <button class="hide">Try out</button>
+                    </div>
+                    <img src="{{ src }}" alt="">
+                </div>
+            </div>
+             
+            
+        
     </div>
 </section>
 
