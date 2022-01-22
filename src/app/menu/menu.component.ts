@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  homeDisplayed=false;
+  homeDisplayed:boolean = false;
+  portfolioDisplayed:boolean = false;
+  aboutDisplayed:boolean = false;
+
+  elements: HTMLElement[] = [];
+  positionEL:Number[]=[]; 
   constructor() {
+    
     setTimeout(() =>{
+      
+      this.elements=this.defineElements();
+      this.positionEL=this.giveElementPosition(this.elements);
       this.highlightLinks();
-    },1000)
+    },100 )
     
    }
 
@@ -21,19 +30,43 @@ export class MenuComponent implements OnInit {
   highlightLinks(){
   setInterval(() =>{
     let scroll=document.documentElement.scrollTop || document.body.scrollTop;
-    let heightHome = document.getElementById('home-content')?.offsetHeight;
     
-    if(heightHome && scroll<heightHome){
-      
-      console.log('home displayed')
+    if( scroll<this.positionEL[1]){
       this.homeDisplayed=true;
+      this.aboutDisplayed=false;
+      this.portfolioDisplayed=false;
     }
-    else {
+    else if(scroll>this.positionEL[1] && scroll<this.positionEL[2]) {
       this.homeDisplayed=false;
+      this.aboutDisplayed=false;
+      this.portfolioDisplayed=true;
+    }
+    else if(scroll>this.positionEL[2] && scroll<this.positionEL[3]) {
+      this.homeDisplayed=false;
+      this.aboutDisplayed=true;
+      this.portfolioDisplayed=false;
     }
     
-  },1000)
+  },100)
    
+  }
+
+  defineElements(): HTMLElement[] {
+    let homeElement = (<HTMLElement>document.getElementById('home-container'));
+    let skillElement = (<HTMLElement>document.getElementById('skills-container'));
+    let workElement = (<HTMLElement>document.getElementById('work-container'));
+    let aboutElement = (<HTMLElement>document.getElementById('aboutMe-container'));
+    let contactElement = (<HTMLElement>document.getElementById('contact-container'));
+    
+    return [homeElement,skillElement,workElement,aboutElement,contactElement]
+  }
+
+  giveElementPosition(elArray:HTMLElement[]): Number[] {
+    let positions:number[] =[];
+  
+    elArray.forEach(element => positions.push(element.offsetTop));
+
+    return positions;
   }
   
 }

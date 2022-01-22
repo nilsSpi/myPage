@@ -1,11 +1,13 @@
 <section class="work-container" id="work-container">
   
   
-    <h2>MY WORK</h2>
+    
   
     <div class="box" id="work-content">
+<h2>MY WORK</h2>
+
         <div class="button-container">
-            <button id="all" (click)="showAll()" class="buttonSecondary">All</button>
+            <button id="all" (click)="showAll()" class="buttonSecondary" [ngClass]="{'toggeld': allIsShown}">All</button>
             <button id="angular" (click)="showAngular()" class="buttonSecondary">Angular</button>
             <button id="js" (click)="showJs()" class="buttonSecondary">JavaScript</button>
         </div>

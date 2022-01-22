@@ -1,0 +1,71 @@
+$color-primary: #FA2759;
+$color-secondary: #2DFCD8;
+$color-grey: #1A1A1A;
+$color-black: #000000;
+
+
+.aboutMe-container {
+    background-color: $color-grey;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    #aboutMe-content {
+
+
+        .aboutMe-Info{
+
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            margin-top:5%;
+            margin-bottom:5%;
+
+            img{
+                height:250px;
+                width:250px;
+                border-radius:100%;
+                object-fit: cover;
+            }
+
+            .aboutMe-text{
+                display: flex;
+                flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            max-width: 50%;
+
+                h4{
+                    color:white;
+                    font-size: 42px;
+                    margin: unset;
+                }
+                p{
+                    color:white;
+                }
+
+            }
+        }
+
+        .barContainer{
+
+            width:100%;
+            height:12px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+
+            .bar{
+            width: 80%;
+            height: 4px;
+            background-color: rgba($color-secondary,0.8);
+            border-radius: 8px;
+           
+        }
+     
+        }
+       
+    }
+}

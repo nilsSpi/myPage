@@ -13,15 +13,24 @@ $color-black: #000000;
     justify-content: center;
     position: relative;
 
-    h2 {
-        position: absolute;
-        top: 5%;
-        color: white;
-        font-size: 42px;
-    }
+   
 
     #work-content{
-       margin-top:10%;
+
+        h2 {
+            position: absolute;
+            top: 5%;
+            color: white;
+            font-size: 42px;
+        }
+
+        .button-container{
+            button{
+                margin:16px;
+            }
+        }
+
+      
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,17 +46,21 @@ $color-black: #000000;
 
             .work-plate{
                 position: relative;
+                margin: 8px;
                 .work-overlay{
                     position: absolute;
                 }
-                img{
-                    width: 250px;
-                    height: 300px;
-                    padding:16px;
-                }
+              img{
+                    width: 230px;
+                    height: 230px;
+               
+                }                      
 
 
                 &:hover{
+
+
+                    
                     .work-overlay{
                         z-index: 10;
                         display: flex;
@@ -55,6 +68,7 @@ $color-black: #000000;
                         animation: animateOverlay 1s linear;
                         height:100%;
                         width: 100%;
+                     
                         background-color: rgba($color-grey,0.6);
 
                         h4{

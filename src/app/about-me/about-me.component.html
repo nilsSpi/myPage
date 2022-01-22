@@ -1,0 +1,24 @@
+<section class="aboutMe-container" id="aboutMe-container">
+    <div id="aboutMe-content" class="box">
+        <div class="aboutMe-Info">
+            <img [src]="aboutInfo.url">
+            <div class="aboutMe-text">
+                <h4>About me</h4>
+            <p [innerHTML]="aboutInfo.text"></p>
+            </div>         
+        </div>
+        <div class="barContainer">
+            <div class="bar"></div>
+        </div>
+        
+
+        <div class="stepsContainer">
+            <div *ngFor="let step of steps" class="step">
+                <img [src]="step.url" alt="">
+                <span [innerHTML]="step.headline"></span>
+                <p [innerHTML]="step.text"></p>
+            </div>
+        </div>
+       
+    </div>
+</section>
