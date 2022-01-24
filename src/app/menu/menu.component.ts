@@ -29,19 +29,19 @@ export class MenuComponent implements OnInit {
 
   highlightLinks(){
   setInterval(() =>{
-    let scroll=document.documentElement.scrollTop || document.body.scrollTop;
+    let scroll=document.documentElement.scrollTop;
     
-    if( scroll<this.positionEL[1]){
+    if( scroll+200<this.positionEL[2]){
       this.homeDisplayed=true;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=false;
     }
-    else if(scroll>this.positionEL[1] && scroll<this.positionEL[2]) {
+    else if(scroll+200>this.positionEL[2] && scroll+200<this.positionEL[3]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=true;
     }
-    else if(scroll>this.positionEL[2] && scroll<this.positionEL[3]) {
+    else if(scroll+200>this.positionEL[3] && scroll<this.positionEL[4]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=true;
       this.portfolioDisplayed=false;

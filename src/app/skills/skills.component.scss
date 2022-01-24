@@ -21,14 +21,16 @@ $color-black: #000000;
 
     #skills-content{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-color: $color-grey;
 
 
-        .row{
-            display: flex;
+        .wrapper{
+            display: flex; 
+            flex-wrap: wrap;
+            max-width: 80%;
 
             .skill-container{
                 position: relative;
@@ -53,7 +55,7 @@ $color-black: #000000;
                     width: 50px;
                 }
             }
-        }
+        } 
     }
 
 }
