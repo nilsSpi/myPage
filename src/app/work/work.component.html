@@ -13,35 +13,35 @@
         </div>
         <div *ngIf="allIsShown" id="render-container">
            
-            <div  *ngFor="let src of sourcesAll" class="work-plate">
+            <div  *ngFor="let project of allProjects" class="work-plate">
                 <div class="work-overlay">
-                    <h4 class="hide">El Pollo Loco</h4>
-                    <p class="hide">object oriented js jump and run game</p>
+                    <h4 class="hide" [innerHTML]="project.header"></h4>
+                    <p class="hide" [innerHTML]="project.description"></p>
                     <button class="hide">Try out</button>
                 </div>
-                <img src="{{ src }}" alt="">
+                <img src="{{ project.src }}" alt="">
             </div> 
         </div>
 
             <div *ngIf="angularIsShown" id="render-container">
-                <div  *ngFor="let src of sourcesAngular" class="work-plate">
+                <div  *ngFor="let project of angularProjects" class="work-plate">
                     <div class="work-overlay">
-                        <h4 class="hide">El Pollo Loco</h4>
-                        <p class="hide">object oriented js jump and run game</p>
+                        <h4 class="hide" [innerHTML]="project.header"></h4>
+                        <p class="hide" [innerHTML]="project.description"></p>
                         <button class="hide">Try out</button>
                     </div>
-                    <img src="{{ src }}" alt="">
+                    <img src="{{ project.src }}" alt="">
                 </div>
             </div>
 
             <div *ngIf="jsIsShown" id="render-container">
-                <div  *ngFor="let src of sourcesJs" class="work-plate">
+                <div  *ngFor="let project of jsProjects" class="work-plate">
                     <div class="work-overlay">
-                        <h4 class="hide">El Pollo Loco</h4>
-                        <p class="hide">object oriented js jump and run game</p>
+                        <h4 class="hide" [innerHTML]="project.header"></h4>
+                        <p class="hide" [innerHTML]="project.description"></p>
                         <button class="hide">Try out</button>
                     </div>
-                    <img src="{{ src }}" alt="">
+                    <img src="{{ project.src }}" alt="">
                 </div>
             </div>
              

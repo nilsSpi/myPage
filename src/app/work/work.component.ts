@@ -1,5 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
+class Project {
+  src: string;
+  header: string;
+  description: string;
+ 
+  constructor(src: string, header: string, description: string){
+    this.src = src;
+    this.header = header;
+    this.description = description;
+    
+  }
+}
 
 @Component({
   selector: 'app-work',
@@ -7,6 +19,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
+
+  public angularProjects: Array<Project> = [
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+  ];
+
+  public jsProjects: Array<Project> = [
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+  ];
+
+  public allProjects: Array<Project> = [
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+  ];
   
   public allIsShown:boolean = true;
   public angularIsShown:boolean = false;
@@ -16,28 +48,6 @@ export class WorkComponent implements OnInit {
   public buttonJs: any ;
   public buttonAngular: any ;
 
-  public sourcesAll: string[]=[
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-  ];
-  public sourcesAngular: string[] = [
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-  ];
-
-  public sourcesJs: string[] = [
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-    "assets/img/projectPlaceholder.jpg",
-  ];
   
   
   constructor() {
