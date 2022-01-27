@@ -1,9 +1,13 @@
 <section class="skills-container" id="skills-container">
-    <h2>MY SKILLS</h2>
+    <div class="skill-text">
+        <h2>MY SKILLS</h2>
+    <p class="opa-zero" id="hiddenP">.......</p>
+    </div>
+    
     <div class="box" id="skills-content">
 
         <div class="wrapper">
-            <div *ngFor="let skill of skills" class="skill-container">
+            <div *ngFor="let skill of skills;index as id;" class="skill-container" id=skill-{{id}}>
                 <span class="skill-text" [innerHTML]="skill.text"></span>
                 <img class="skill-image" [src]="skill.src" alt="">
             </div>

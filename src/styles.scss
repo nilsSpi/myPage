@@ -16,6 +16,12 @@ $color-black: #000000;
 .hide{
     display: none !important;
 }
+.opa-zero{
+    opacity: 0;
+}
+.opa-one{
+    opacity: 100%;
+}
 
 .box{
     width: 90vw;

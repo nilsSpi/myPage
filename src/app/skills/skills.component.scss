@@ -9,15 +9,32 @@ $color-black: #000000;
     max-width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
 
-    h2 {
+    .skill-text{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    margin-top: 5%;
+        h2{
+            color: white;
+            font-size: 42px;
+            text-align: center;
+        }
+        #hiddenP{
+            color: white;
+            text-align: center;
+        }
+    }
+
+  /*  h2 {
         position: absolute;
         top: 5%;
         color: white;
         font-size: 42px;
-    }
+    }  */
 
     #skills-content{
         display: flex;
