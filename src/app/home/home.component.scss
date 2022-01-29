@@ -47,3 +47,22 @@ $color-black: #000000;
     }
     
 }
+
+
+@media (max-width: 1000px) {
+    #home-content {
+        flex-direction: column;
+
+        
+
+            img{
+                margin-top: unset !important;
+                align-self: end !important;
+                height: 350px !important;
+                width: 350px !important;
+            }
+       
+
+       
+    }
+}

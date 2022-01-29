@@ -90,6 +90,10 @@ $color-black: #000000;
                             display: unset !important;
                             color: white;
                             background-color: $color-primary;
+
+                            a{
+                                color: white;
+                            }
                         }
                     }
                    

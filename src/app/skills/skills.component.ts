@@ -30,19 +30,19 @@ export class SkillsComponent implements OnInit {
     this.skills=[
       new Skill("assets/img/Group 205.png","HTML/CSS",
       
-      "I learned Html/css"),
+      "I learned about Html/css as the backbone of websites, in addition i got to know SCSS and the CSS framework bootstrap"),
       new Skill("assets/img/java script.png","JavaScript",
-      "I learned JS"),
+      "I learned to use JavaScript to give a logical component to my projects"),
       new Skill("assets/img/angular.png","Angular",
-      "I learned Angular"),
+      "I learned to build projects with the framework Angular"),
       new Skill("assets/img/ts-logo-128.png","TypeScript",
-      "I learned Typescript"),
+      "After getting a good grab on JavaScript, I dived into the superset Typescript"),
       new Skill("assets/img/Git-Icon-1788C 2.png","Git",
-      "I learned Git"),
+      "In the programming academy we had group-projects where we experienced the pros of the git version control. Feel free to check my gitHub profil nilsSpi!"),
       new Skill("assets/img/icons8-rest-api-80 2.png",
       "Rest APIs","I learned API"),
       new Skill("assets/img/octave-logo.png","Octave",
-      "By studying mathematics i learned to work with octave and matlab. Especially numerical methods, optimaziation of non linear functions are beloved subjects of mine"),
+      "By studying mathematics i learned to work with octave and matlab. Especially numerical methods and optimization of non linear functions are beloved subjects of mine"),
     ];
     setTimeout(()=>{
     this.elements= this.defineElements();
