@@ -33,6 +33,12 @@ $color-black: #000000;
                 color: $color-secondary;
                 font-size: 42px;
             }
+
+            p{
+                a{
+                    color:$color-secondary !important;
+                }
+            }
         }
 
         #contact-form{

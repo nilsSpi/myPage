@@ -4,11 +4,13 @@ class Project {
   src: string;
   header: string;
   description: string;
+  href: string;
  
-  constructor(src: string, header: string, description: string){
+  constructor(src: string, header: string, description: string,href: string) {
     this.src = src;
     this.header = header;
     this.description = description;
+    this.href = href;
     
   }
 }
@@ -21,23 +23,23 @@ class Project {
 export class WorkComponent implements OnInit {
 
   public angularProjects: Array<Project> = [
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+     new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+     new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+     new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
   ];
 
   public jsProjects: Array<Project> = [
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
   ];
 
   public allProjects: Array<Project> = [
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
-    new Project("assets/img/projectPlaceholder.jpg","Join","project debugger"),
+    new Project("assets/img/join.png","Join","project manegment tool/kanban board","https://nils-spiller.de/projects/join/index.html"),
+    new Project("assets/img/elPolloLoco.png","El Pollo Loco","javaScript jump and run game","https://nils-spiller.de/projects/elPolloLoco/index.html"),
+    new Project("assets/img/kochWelt.png","Kochwelt","cooking website to share recepies","https://nils-spiller.de/projects/kochWelt/prod/index.html"),
+    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
   ];
   
   public allIsShown:boolean = true;

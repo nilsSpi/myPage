@@ -17,7 +17,7 @@
                 <div class="work-overlay">
                     <h4 class="hide" [innerHTML]="project.header"></h4>
                     <p class="hide" [innerHTML]="project.description"></p>
-                    <button class="hide">Try out</button>
+                    <button class="hide"><a [href]="project.href" target="_blank">See this project</a></button>
                 </div>
                 <img src="{{ project.src }}" alt="">
             </div> 
@@ -28,7 +28,7 @@
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>
                         <p class="hide" [innerHTML]="project.description"></p>
-                        <button class="hide">Try out</button>
+                        <button class="hide"><a [href]="project.href" target="_blank">See this project</a></button>
                     </div>
                     <img src="{{ project.src }}" alt="">
                 </div>
@@ -39,7 +39,7 @@
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>
                         <p class="hide" [innerHTML]="project.description"></p>
-                        <button class="hide">Try out</button>
+                        <button class="hide"><a [href]="project.href" target="_blank">See this project</a></button>
                     </div>
                     <img src="{{ project.src }}" alt="">
                 </div>
