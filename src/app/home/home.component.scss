@@ -52,14 +52,78 @@ $color-black: #000000;
 @media (max-width: 1000px) {
     #home-content {
         flex-direction: column;
+        justify-content:center;
+
+        .container{
+
+            .text-container{
+                h1{
+                    font-size: 32px;
+                }
+            }
+        }
 
         
 
             img{
                 margin-top: unset !important;
-                align-self: end !important;
+                align-self: center !important;
                 height: 350px !important;
                 width: 350px !important;
+            }
+       
+
+       
+    }
+}
+
+
+@media (max-width: 600px) {
+    #home-container {
+        height: unset !important;
+    }
+    #home-content {
+        height: unset !important;
+        flex-direction: column;
+        justify-content:center;
+
+        .container{
+            button{
+                width: 169px!important;
+                height:80px!important;
+            }
+
+            .text-container{
+                h1{
+                    font-size: 32px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #home-content {
+        flex-direction: column;
+        justify-content:center;
+
+        .container{
+            margin-bottom: 10%;
+
+            .text-container{
+                h1{
+                    font-size: 28px!important;
+                }
+            }
+        }
+
+        
+
+            img{
+                margin-top: unset !important;
+                align-self: center !important;
+                height: 250px !important;
+                width: 250px !important;
             }
        
 

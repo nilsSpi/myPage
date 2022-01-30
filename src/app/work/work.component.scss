@@ -135,3 +135,46 @@ $color-black: #000000;
         background-color: $color-primary;
     }
 }
+
+
+
+@media (max-width: 900px) {
+    button {
+        width: 169px !important;
+        height: 80px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    button {
+        width: 135px !important;
+        height: 60px !important;
+    }
+    img{
+        width:200px !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 560px) {
+    #work-container{
+        height: unset !important;
+
+        #work-content{
+            height: unset !important;
+
+            h2{
+                position: relative !important;
+                margin-bottom: 2rem !important;
+            }
+            .button-container{
+                margin-top:5rem !important;
+            }
+
+            #render-container{
+                flex-wrap: unset !important;
+                flex-direction: column;
+            }
+        }
+    }
+}

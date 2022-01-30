@@ -149,3 +149,39 @@ $color-black: #000000;
     100% {width:00%;}
 }
 
+@media (max-width: 900px) {
+    .skills-container{
+       
+
+        #skills-content {
+           
+
+            .wrapper {
+                justify-content:center !important;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .skills-container{
+        height:unset !important;
+
+        #skills-content {
+            height: unset !important;
+
+            .wrapper {
+                justify-content:center !important;
+                max-width: unset !important;
+
+                .skill-container{
+                    width: 100px !important;
+                    height: 100px !important;
+                    margin: 10px !important;
+                }
+            }
+        }
+    }
+}
