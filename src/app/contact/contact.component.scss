@@ -100,3 +100,9 @@ $color-black: #000000;
     }
 }
 
+
+@media (max-width: 750px) {
+    #contact-content {
+        width: 85vw !important;
+    }
+}
