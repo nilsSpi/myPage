@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +29,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

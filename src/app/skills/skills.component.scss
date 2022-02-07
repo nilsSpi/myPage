@@ -53,6 +53,8 @@ $color-black: #000000;
         .wrapper{
             display: flex; 
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             max-width: 80%;
 
             .skill-container{

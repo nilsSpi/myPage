@@ -7,14 +7,22 @@
             </p>
         </div>
         <!--  comment  -->
-        <form id="contact-form" action="https://nils-spiller.de/send_mail.php" method="post">
+        <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <label for="name">Name</label>
-            <input name="name" id="name" type="text" placeholder="Enter your name">
+            <input required
+            [(ngModel)]="contact.name"
+            name="name"
+            #name="ngModel" type="text" placeholder="Enter your name">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter your email">
+            <input  type="email" [(ngModel)]="contact.email"
+            name="email"
+            #email="ngModel" placeholder="Enter your email">
             <label for="message">Message</label>
-            <textarea id="message" name="message" type="text" placeholder="Enter your message"></textarea>
-            <button (click)="resetForm()" class="buttonPrimary"type="submit">Send</button>
+            <textarea required
+            [(ngModel)]="contact.message"
+            name="message"
+            #message="ngModel" id="message" name="message" type="text" placeholder="Enter your message"></textarea>
+            <button  class="buttonPrimary"type="submit">Send</button>
         </form>
       
     </div>
