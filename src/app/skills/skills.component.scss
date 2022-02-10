@@ -24,14 +24,48 @@ $color-black: #000000;
             text-align: center;
         }
 
-        .fade-container{
-            position: relative;
-            #hiddenP{
-            color: $color-secondary;
+        .subline{
             text-align: center;
-            overflow: hidden;
+            color: $color-primary;
         }
+        #typing-container{
+            min-height: 20px;
+            display: flex;
+    justify-content: center;
+
+            .typingEffect{
+                color: white !important;
+                position: relative;
+                width: max-content;
+                left: auto;
+                right: auto;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background:$color-grey;
+                    animation: typingAnimation 10s steps(50) 1s forwards;
+                }
+                &::after{
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: .250em;
+                    background:$color-secondary;
+                    animation: typingAnimation 10s steps(50) 1s forwards,
+                    blinkAnimation 650ms steps(50) infinite;
+    
+                }
+            }
         }
+       
+        
         
     }
 
@@ -87,68 +121,16 @@ $color-black: #000000;
 
 }
 
-.fadingEffect {
-    position:absolute;
-    top:0; bottom:0; right:0;
-    width:00%;
-    background:$color-grey;
-    -moz-animation: showHide 5s ease-in; /* Firefox */
-    -webkit-animation: showHide 5s ease-in; /* Safari and Chrome */
-    -ms-animation: showHide 5s ease-in; /* IE10 */
-    -o-animation: showHide 5s ease-in; /* Opera */
-    animation: showHide 5s ease-in;
+@keyframes typingAnimation {
+    to {
+        left: 100%;
+    }
 }
 
- 
-@-webkit-keyframes showHide { /* Chrome, Safari */
-    0% {width:100%}
-    10%{width:85%}
-    20%{width:75%}
-    33%{width:65%}
-    50% {width:55%}
-    60% {width:45%;}
-    85% {width:25%}
-    100% {width:00%;}
-}
-@-moz-keyframes showHide { /* FF */
-    0% {width:100%}
-    10%{width:85%}
-    20%{width:75%}
-    33%{width:65%}
-    50% {width:55%}
-    60% {width:45%;}
-    85% {width:25%}
-    100% {width:00%;}
-}
-@-ms-keyframes showHide { /* IE10 */
-    0% {width:100%}
-    10%{width:85%}
-    20%{width:75%}
-    33%{width:65%}
-    50% {width:55%}
-    60% {width:45%;}
-    85% {width:25%}
-    100% {width:00%;}
-}
-@-o-keyframes showHide { /* Opera */
-    0% {width:100%}
-    10%{width:85%}
-    20%{width:75%}
-    33%{width:65%}
-    50% {width:55%}
-    60% {width:45%;}
-    85% {width:25%}
-    100% {width:00%;}
-}
-@keyframes showHide {
-    0% {width:100%}
-    10%{width:85%}
-    20%{width:75%}
-    33%{width:65%}
-    50% {width:55%}
-    60% {width:45%;}
-    85% {width:25%}
-    100% {width:00%;}
+@keyframes blinkAnimation {
+    to {
+        background: transparent;
+    }
 }
 
 @media (max-width: 900px) {
@@ -187,3 +169,10 @@ $color-black: #000000;
         }
     }
 }
+
+
+
+
+
+
+
