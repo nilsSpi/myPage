@@ -27,11 +27,13 @@ $color-black: #000000;
         .subline{
             text-align: center;
             color: $color-primary;
+            margin-bottom: 1.5rem;
         }
         #typing-container{
             min-height: 20px;
             display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 
             .typingEffect{
                 color: white !important;
