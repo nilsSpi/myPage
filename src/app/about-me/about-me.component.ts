@@ -35,7 +35,7 @@ public aboutText: string="I like nature related activities like hiking and climb
     {
       url:"assets/img/heart-line.png",
       headline:"The first steps",
-      text:"Because I loved softwareengineering I did some self studies, to increase my view on that subject. Especially the vast variety of frent end development amazed me and so i did courses of udemy and codecamp to get some basic knowledge in HTML/CSS and JavaScript"
+      text:"Because I had great joy in softwareengineering 1, I did some self studies to increase my view on that subject and build some basic projects. Especially the vast variety of front end development amazed me and so i did courses of udemy and codecamp to get some basic knowledge in HTML/CSS and JavaScript"
 
     },
     {

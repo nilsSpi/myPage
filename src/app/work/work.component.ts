@@ -39,7 +39,7 @@ export class WorkComponent implements OnInit {
     new Project("assets/img/join.png","Join","project manegment tool/kanban board","https://nils-spiller.de/projects/join/index.html"),
     new Project("assets/img/elPolloLoco.png","El Pollo Loco","javaScript jump and run game","https://nils-spiller.de/projects/elPolloLoco/index.html"),
     new Project("assets/img/kochWelt.png","Kochwelt","cooking website to share recepies","https://nils-spiller.de/projects/kochWelt/prod/index.html"),
-    new Project("assets/img/projectPlaceholder.jpg","Stay tuned","upcoming...",""),
+    new Project("assets/img/projectPlaceholder.jpg","Ring of fire","upcoming...","https://nils-spiller.de/projects/ring-of-fire/index.html"),
   ];
   
   public allIsShown:boolean = true;

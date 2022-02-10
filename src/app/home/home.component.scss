@@ -43,6 +43,65 @@ $color-black: #000000;
             object-fit: cover;
             border-radius: 100%;
         }
+
+        .flipImage-container{
+            position: relative;
+            margin-top:10%;
+            width: 450px;
+            height: 450px;
+           
+            border-radius: 100%;
+            background-color:$color-black;
+            .card{
+               
+                border-radius: 100%;
+                position:absolute;
+                width: 100%;
+                height:100%;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease-in;
+                &:hover{
+                    transform:rotateY(180deg);
+                }
+                .frontCard {
+                   
+                    border-radius: 100%;
+                    position:absolute;
+                    width: 100%;
+                    height:100%;
+                    backface-visibility: hidden;
+                    background-image: url("/assets/img/profilePic1.jpg");
+                    background-position: 50% 50%;
+                    background-size: 80%;
+                    
+                }
+                .backCard {
+                    border-radius: 100%;
+                    position:absolute;
+                    width: 100%;
+                    height:100%;
+                    backface-visibility: hidden;
+                    background-color:$color-grey;
+                    transform: rotateY(180deg);
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    flex-direction: column;
+
+                    span{
+                        padding: 8px;
+                        color: $color-secondary;
+                        text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color-primary;
+                        
+                    }
+
+                }
+            }
+        }
        
     }
     
@@ -65,7 +124,7 @@ $color-black: #000000;
 
         
 
-            img{
+        .flipImage-container{
                 margin-top: unset !important;
                 align-self: center !important;
                 height: 350px !important;
@@ -121,7 +180,7 @@ $color-black: #000000;
 
         
 
-            img{
+        .flipImage-container{
                 margin-top: unset !important;
                 align-self: center !important;
                 height: 250px !important;
