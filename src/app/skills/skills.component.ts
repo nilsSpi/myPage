@@ -30,21 +30,20 @@ export class SkillsComponent implements OnInit {
     this.elements =[];
     this.skills=[
       new Skill("assets/img/Group 205.png","HTML/CSS",
-      
-      " static but neatly designed webpages like KochWelt and sakura Ramen."),
+      " static but neatly designed webpages like KochWelt and sakuraRamen."),
       new Skill("assets/img/java script.png","JavaScript",
-      "Join: project manegment tool,El-Pollo-loco: jump and run canvas game"),
+      "Join: project manegment tool,El-Pollo-loco: jump and run canvas game,tic tac toe"),
       new Skill("assets/img/angular.png","Angular",
       "Ring of fire: popular drinking game,myPage: code of this very site"),
       new Skill("assets/img/ts-logo-128.png","TypeScript",
       "Ring of fire: popular drinking game,Ring of fire multiplayer with firebase,myPage: code of this very site"),
       new Skill("assets/img/Git-Icon-1788C 2.png","Git",
-      "I love team projects!The version control is extreme useful. apropos Git... check my gitHub for my team projects like KochWelt and Join"),
+      "...apropos Git... check my gitHub for my team projects like KochWelt and Join where we enjoyed the version control of git."),
       new Skill("assets/img/icons8-rest-api-80 2.png",
       "Rest APIs",
       "example API projects of mine : Render the Saurus,pokedex"),
       new Skill("assets/img/octave-logo.png","Octave",
-      "By studying mathematics i learned to work with octave and matlab. Especially numerical methods and optimization of non linear functions are beloved subjects of mine"),
+      "By studying mathematics i learned to work with octave and matlab. Check my implementation for numerical quadrature or (non-)linear optimation."),
     ];
     setTimeout(()=>{
     this.elements= this.defineElements();

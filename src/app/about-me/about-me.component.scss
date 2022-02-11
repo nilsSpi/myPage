@@ -38,6 +38,7 @@ $color-black: #000000;
             justify-content:center;
             align-items:center;
             max-width: 50%;
+            text-align: center !important;
 
                 h4{
                     color:white;
@@ -95,6 +96,7 @@ $color-black: #000000;
                 p{
                     color:white;
                     height: 180px;
+                    text-align: center !important;
                 }
             }
         }
@@ -135,6 +137,7 @@ $color-black: #000000;
                 .aboutMe-text{
                     p{
                         height: unset !important;
+                        
                     }
                 }
             }

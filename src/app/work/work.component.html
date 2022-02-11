@@ -14,7 +14,7 @@
         </div>
 
         <div *ngIf="pinnedIsShown" id="render-container">      
-            <div  *ngFor="let project of allProjects" class="work-plate">
+            <div  *ngFor="let project of pinnedProjects" class="work-plate">
                 <div class="work-overlay">
                     <h4 class="hide" [innerHTML]="project.header"></h4>
                     <p class="hide" [innerHTML]="project.description"></p>
