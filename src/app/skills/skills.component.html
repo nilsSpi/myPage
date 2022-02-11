@@ -1,8 +1,8 @@
 <section class="skills-container" id="skills-container">
     <div class="skill-text">
         <h2>MY SKILLS</h2>
-       <span class="subline">[ hover over skill to get an according code examples from my gitHub ] :</span>
-        <div class="opa-zero" id="typing-container"> </div>
+       <span [ngClass]="{'hide': !typingIsShown}" class="subline">[ hover over skill to get an according code examples from my gitHub ] :</span>
+        <div [ngClass]="{'hide': !typingIsShown}" class="opa-zero" id="typing-container"> </div>
      
     </div>
     

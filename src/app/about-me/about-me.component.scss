@@ -96,7 +96,8 @@ $color-black: #000000;
                 p{
                     color:white;
                     height: 180px;
-                    text-align: center !important;
+                    text-align: justify !important;
+                    word-break: break-all !important;
                 }
             }
         }

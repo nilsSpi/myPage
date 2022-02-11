@@ -20,7 +20,7 @@ class Skill {
 export class SkillsComponent implements OnInit {
  
   public skills: Skill[];
- 
+  public typingIsShown:boolean = true;
   public elements: HTMLElement[];
   public typingContainer:HTMLElement;
 
@@ -54,7 +54,20 @@ export class SkillsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
+   
+    this.checkTyping();
+  }
+
+  checkTyping(): void {
+    setInterval(()=>{
+      
+      if (window.innerWidth < 560) { 
+        this.typingIsShown = false;
+      }
+      else{
+        this.typingIsShown = true;
+      }
+    },100);
   }
 
 

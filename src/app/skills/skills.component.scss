@@ -154,9 +154,19 @@ $color-black: #000000;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
+    #typing-container{
+        max-width: 100%;
+        overflow: hidden !important;
+        span{
+            font-size: 1rem !important;
+            color:red;
+        }
+    }
     .skills-container{
         height:unset !important;
+
+       
 
         #skills-content {
             height: unset !important;
