@@ -31,7 +31,7 @@ export class MenuComponent implements OnInit {
   setInterval(() =>{
     let scroll=document.documentElement.scrollTop;
     
-    if( scroll+200<this.positionEL[2]){
+    if( scroll+100<this.positionEL[2]){
       this.homeDisplayed=true;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=false;
@@ -41,7 +41,7 @@ export class MenuComponent implements OnInit {
       this.aboutDisplayed=false;
       this.portfolioDisplayed=true;
     }
-    else if(scroll+200>this.positionEL[3] && scroll<this.positionEL[4]) {
+    else if( scroll+200<this.positionEL[4]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=true;
       this.portfolioDisplayed=false;
