@@ -36,7 +36,7 @@ export class MenuComponent implements OnInit {
       this.aboutDisplayed=false;
       this.portfolioDisplayed=false;
     }
-    else if(scroll+200>this.positionEL[2] && scroll+200<this.positionEL[3]) {
+    else if( scroll+200<this.positionEL[3]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=true;
