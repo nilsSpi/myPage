@@ -139,6 +139,10 @@ $color-black: #000000;
                 flex-direction: column !important;
 
                 .aboutMe-text{
+                    max-width: unset !important;
+                    h4{
+                        margin-top:2%;
+                    }
                     p{
                         max-width: 100% !important;               
                     }
@@ -152,10 +156,16 @@ $color-black: #000000;
                 justify-content: center !important;
 
                 .step{
-                    max-width:60% !important;
+                    max-width:80% !important;
+                    span{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
                     
                     p{
                         height: unset !important;
+                        font-size:20px !important;
+                        text-align: center !important;
                     }
                 }
             }
