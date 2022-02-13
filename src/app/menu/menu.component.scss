@@ -75,3 +75,15 @@ nav{
         border-bottom: 2px solid $color-secondary;
     }
     }
+
+
+    @media (max-width: 560px){
+        a{
+            padding: 4px !important;
+        }
+        img{
+            width:50px !important;
+            height:50px !important;
+    
+        }
+    }

@@ -200,10 +200,10 @@ $color-black: #000000;
 }
 
 @media (max-width: 560px) {
-    img{
-        width:350px !important;
-        height: 350px !important;
-    }
+  //  img{
+     //   width:350px !important;
+     //   height: 350px !important;
+  //  }
     #work-container{
         height: unset !important;
         padding-bottom: 5% !important;

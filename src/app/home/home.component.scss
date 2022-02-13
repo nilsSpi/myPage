@@ -18,12 +18,15 @@ $color-black: #000000;
         
 
         .container {
-            margin-top:10%;
+         //   margin-top:10%;
 
             .text-container {
-                h1{
+                p{
                     color: white;
                     font-size: 42px;
+                }
+                .nameColor{
+                    color: $color-primary;
                 }
             }
             button {
@@ -37,20 +40,14 @@ $color-black: #000000;
            
         }
 
-        img {
-            margin-top:10%;
-            width: 450px;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 100%;
-        }
+       
 
         .flipImage-container{
             position: relative;
-            margin-top:10%;
-            width: 450px;
-            height: 450px;
-           
+          //  margin-top:10%;
+            width: 575px;
+            height: 575px;
+            align-self: center;
             border-radius: 100%;
             background-color:$color-black;
             .card{
@@ -107,6 +104,13 @@ $color-black: #000000;
     }
     
 }
+@media (max-width: 1300px) {
+    .flipImage-container{
+      
+        height: 520px !important;
+        width: 520px !important;
+    }
+}
 
 
 @media (max-width: 1000px) {
@@ -117,8 +121,11 @@ $color-black: #000000;
         .container{
 
             .text-container{
-                h1{
+                p{
                     font-size: 32px;
+                }
+                .nameColor{
+                    color: $color-primary;
                 }
             }
         }
@@ -142,11 +149,13 @@ $color-black: #000000;
     #home-container {
         height: unset !important;
         padding-bottom: 5% !important;
+         align-items: unset !important;
     }
     #home-content {
         height: unset !important;
         flex-direction: column;
         justify-content:center;
+       
 
         .container{
             padding:5% !important;
@@ -156,8 +165,11 @@ $color-black: #000000;
             }
 
             .text-container{
-                h1{
+                p{
                     font-size: 32px !important;
+                }
+                .nameColor{
+                    color: $color-primary;
                 }
             }
         }
@@ -173,8 +185,11 @@ $color-black: #000000;
             margin-bottom: 10%;
 
             .text-container{
-                h1{
+                p{
                     font-size: 28px!important;
+                }
+                .nameColor{
+                    color: $color-primary;
                 }
             }
         }
