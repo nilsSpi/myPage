@@ -29,22 +29,26 @@ export class MenuComponent implements OnInit {
 
   highlightLinks(){
   setInterval(() =>{
-    let scroll=document.documentElement.scrollTop;
+    let scroll=document.documentElement.scrollTop +200;
+   // console.log("")
     
-    if( scroll+100<this.positionEL[2]){
+    if( scroll<this.positionEL[2]){
       this.homeDisplayed=true;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=false;
+    //  console.log("")
     }
-    else if( scroll+200<this.positionEL[3]) {
+    else if(scroll>=this.positionEL[2] && scroll <this.positionEL[3]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=false;
       this.portfolioDisplayed=true;
+    //  console.log("")
     }
-    else if( scroll+200<this.positionEL[4]) {
+    else if(scroll>=this.positionEL[3] && scroll<this.positionEL[4]) {
       this.homeDisplayed=false;
       this.aboutDisplayed=true;
       this.portfolioDisplayed=false;
+    //  console.log("")
     }
     
   },100)
@@ -64,7 +68,7 @@ export class MenuComponent implements OnInit {
   giveElementPosition(elArray:HTMLElement[]): Number[] {
     let positions:number[] =[];
   
-    elArray.forEach(element => positions.push(element.offsetTop));
+    elArray.forEach(element => positions.push(element.offsetTop -200));
 
     return positions;
   }

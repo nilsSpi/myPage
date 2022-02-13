@@ -1,7 +1,14 @@
 <section class="aboutMe-container" id="aboutMe-container">
     <div id="aboutMe-content" class="box">
         <div class="aboutMe-Info">
-            <img [src]="aboutInfo.url">
+         <!--   <img [src]="aboutInfo.url"> --> 
+         <div class="flipImage-container">
+            <div class="card">
+                <div class="frontCard"></div>
+                <div class="backCard">  </div>
+            </div>
+        </div>
+        
             <div class="aboutMe-text">
                 <h4>About me</h4>
             <p [innerHTML]="aboutInfo.text"></p>
