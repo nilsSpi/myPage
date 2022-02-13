@@ -111,6 +111,13 @@ $color-black: #000000;
         width: 520px !important;
     }
 }
+@media (max-width: 1100px) {
+    .flipImage-container{
+      
+        height: 480px !important;
+        width: 480px !important;
+    }
+}
 
 
 @media (max-width: 1000px) {
