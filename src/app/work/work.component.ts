@@ -82,10 +82,10 @@ export class WorkComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    setTimeout(() =>{
+    setInterval(() => {
       this.sliders=document.querySelectorAll(".slider");
     this.slideIn();
-    },100)
+    },300)
   }
   showAll(): void {
     this.pinnedIsShown = false;

@@ -71,7 +71,7 @@ public aboutText: string="I like nature related activities like hiking and climb
   slideIn(): void {
     const appearOptions={
       threshold:0 ,
-      rootMargin: "0px 0px -300px 0px",
+      rootMargin: "-200px 0px -300px 0px",
     };
     const appearOnScroll= new IntersectionObserver((entries,appearOnScroll)=>{
       entries.forEach(entry=>{
