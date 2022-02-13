@@ -26,6 +26,9 @@ public aboutText: string="I like nature related activities like hiking and climb
     text : this.aboutText
   }
 
+  public sliders=document.querySelectorAll(".slider");
+  public faders=document.querySelectorAll(".fader");
+
   public steps : step[]= [
     {
       url:"assets/img/search-line.png",
@@ -57,6 +60,42 @@ public aboutText: string="I like nature related activities like hiking and climb
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() =>{
+      this.sliders=document.querySelectorAll(".slider");
+      this.faders=document.querySelectorAll(".fader");
+    this.slideIn();
+    },100)
+    
+  }
+
+  slideIn(): void {
+    const appearOptions={
+      threshold:0 ,
+      rootMargin: "0px 0px -300px 0px",
+    };
+    const appearOnScroll= new IntersectionObserver((entries,appearOnScroll)=>{
+      entries.forEach(entry=>{
+        if (!entry.isIntersecting){
+          entry.target.classList.remove('appear');
+          return;}
+        else{
+          
+          entry.target.classList.add('appear');
+         // appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },appearOptions);
+
+
+
+
+    this.sliders.forEach(slider=>{
+     appearOnScroll.observe(slider);
+    });
+
+    this.faders.forEach(fader=>{
+      appearOnScroll.observe(fader);
+    })
   }
 
 }

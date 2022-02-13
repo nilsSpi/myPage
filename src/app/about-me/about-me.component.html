@@ -2,14 +2,14 @@
     <div id="aboutMe-content" class="box">
         <div class="aboutMe-Info">
          <!--   <img [src]="aboutInfo.url"> --> 
-         <div class="flipImage-container">
+         <div class="flipImage-container from-left slider">
             <div class="card">
                 <div class="frontCard"></div>
                 <div class="backCard">  </div>
             </div>
         </div>
         
-            <div class="aboutMe-text">
+            <div class="aboutMe-text from-right slider">
                 <h4>About me</h4>
             <p [innerHTML]="aboutInfo.text"></p>
             </div>         
@@ -20,7 +20,7 @@
         
 
         <div class="stepsContainer">
-            <div *ngFor="let step of steps" class="step">
+            <div *ngFor="let step of steps" class="step fader">
                 <img [src]="step.url" alt="">
                 <span [innerHTML]="step.headline"></span>
                 <p [innerHTML]="step.text"></p>

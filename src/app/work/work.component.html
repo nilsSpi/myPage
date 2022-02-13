@@ -6,14 +6,14 @@
     <div class="box" id="work-content">
 
 
-        <div class="button-container">
+        <div class="button-container from-left slider">
             <button id="pinned" (click)="showPinned()" class="buttonSecondary" [ngClass]="{'toggeld': pinnedIsShown}">Pinned</button>        
             <button id="angular" (click)="showAngular()" class="buttonSecondary">Angular</button>
             <button id="js" (click)="showJs()" class="buttonSecondary">JavaScript</button>
             <button id="all" (click)="showAll()" class="buttonSecondary">All</button>     
         </div>
 
-        <div *ngIf="pinnedIsShown" id="render-container">      
+        <div *ngIf="pinnedIsShown" id="render-container" class=" from-right slider">      
             <div  *ngFor="let project of pinnedProjects" class="work-plate">
                 <div class="work-overlay">
                     <h4 class="hide" [innerHTML]="project.header"></h4>
@@ -24,7 +24,7 @@
             </div> 
         </div>
 
-        <div *ngIf="allIsShown" id="render-container">      
+        <div *ngIf="allIsShown" id="render-container" class=" from-right slider">      
             <div  *ngFor="let project of allProjects" class="work-plate">
                 <div class="work-overlay">
                     <h4 class="hide" [innerHTML]="project.header"></h4>
@@ -35,7 +35,7 @@
             </div> 
         </div>
 
-            <div *ngIf="angularIsShown" id="render-container">
+            <div *ngIf="angularIsShown" id="render-container" class=" from-right slider">
                 <div  *ngFor="let project of angularProjects" class="work-plate">
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div *ngIf="jsIsShown" id="render-container">
+            <div *ngIf="jsIsShown" id="render-container" class=" from-right slider">
                 <div  *ngFor="let project of jsProjects" class="work-plate">
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>

@@ -366,3 +366,20 @@ $color-black: #000000;
         background: $color-secondary;
     }
 }
+
+.from-left {
+    transform: translateX(-100%);
+}
+.from-right {
+    transform: translateX(100%);
+}
+
+.from-left,
+.from-right{
+    transition:transform 400ms ease-in;
+}
+
+.appear{
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}

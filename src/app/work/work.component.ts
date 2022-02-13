@@ -72,6 +72,7 @@ export class WorkComponent implements OnInit {
   public buttonJs: any ;
   public buttonAngular: any ;
   public buttonPinned: any ;
+  public sliders=document.querySelectorAll(".slider");
 
   
   
@@ -81,6 +82,10 @@ export class WorkComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    setTimeout(() =>{
+      this.sliders=document.querySelectorAll(".slider");
+    this.slideIn();
+    },100)
   }
   showAll(): void {
     this.pinnedIsShown = false;
@@ -177,4 +182,30 @@ export class WorkComponent implements OnInit {
     }
     
    }
+
+   slideIn(): void {
+    const appearOptions={
+      threshold:0 ,
+      rootMargin: "0px 0px -300px 0px",
+    };
+    const appearOnScroll= new IntersectionObserver((entries,appearOnScroll)=>{
+      entries.forEach(entry=>{
+        if (!entry.isIntersecting){
+          entry.target.classList.remove('appear');
+          return;}
+        else{
+         
+          entry.target.classList.add('appear');
+         // appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },appearOptions);
+
+
+
+
+    this.sliders.forEach(slider=>{
+     appearOnScroll.observe(slider);
+    });
+  }
 }
