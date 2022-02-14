@@ -136,9 +136,14 @@ $color-black: #000000;
 
 
 @media (max-width: 1000px) {
+    .buttonPrimary{
+        width:90%;
+        height: 100px;
+        margin-bottom: 5%;
+    }
     #home-content {
-        flex-direction: column;
-        justify-content:center;
+        flex-direction: column-reverse;
+        justify-content:center !important;
 
         .container{
 
@@ -146,19 +151,18 @@ $color-black: #000000;
                 p{
                     font-size: 32px;
                 }
-                .nameColor{
-                    color: $color-primary;
-                }
+              
             }
         }
 
         
 
         .flipImage-container{
-               
+            margin: unset !important;
                 align-self: center !important;
                 height: 350px !important;
                 width: 350px !important;
+            
             }
        
 
@@ -168,69 +172,31 @@ $color-black: #000000;
 
 
 @media (max-width: 600px) {
-    #home-container {
-        height: unset !important;
-        padding-bottom: 5% !important;
-         align-items: unset !important;
-    }
-    #home-content {
-        height: unset !important;
-        flex-direction: column;
-        justify-content:center;
-       
-
-        .container{
-            padding:5% !important;
-            button{
-                width: 169px!important;
-                height:80px!important;
-            }
-
-            .text-container{
-                p{
-                    font-size: 32px !important;
-                }
-                .nameColor{
-                    color: $color-primary;
-                }
-            }
+    .text-container{
+        p{
+            font-size: 32px!important;
         }
-    }
-}
-
-@media (max-width: 450px) {
-   
-    #home-content {
-        flex-direction: column;
-        justify-content:center;
-
-        .container{
-            margin-bottom: 10%;
-
-            .text-container{
-                p{
-                    font-size: 28px!important;
-                }
-                .nameColor{
-                    color: $color-primary;
-                }
-            }
-        }
-
         
-
-        .flipImage-container{
-                margin-top: unset !important;
-                margin-left: unset !important;
-                align-self: center !important;
-                height: 250px !important;
-                width: 250px !important;
-            }
-       
-
-       
     }
+    .flipImage-container{
+       
+       
+        margin-left:0;
+    }
+    
 }
+
+@media (max-width: 500px) {
+   
+        #home-content {
+             .flipImage-container{
+                 margin-bottom: 2rem !important;
+                height: 300px !important;
+                width: 300px !important;
+            }
+        }    
+    }
+
 
 @media (max-width: 400px) {
    
@@ -248,7 +214,6 @@ $color-black: #000000;
         }
     }
 }
-
 
 
 
