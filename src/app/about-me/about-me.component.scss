@@ -5,6 +5,8 @@ $color-black: #000000;
 
 
 .aboutMe-container {
+    overflow-x: hidden;
+
     background-color: $color-grey;
     max-width: 100vw;
   //  height: 100vh;
@@ -252,6 +254,3 @@ $color-black: #000000;
     transition: opacity 400ms ease-in;
 }
 
-.unsetTransition {
-    transition: none !important;
-}
