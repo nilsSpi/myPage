@@ -29,11 +29,13 @@ export class SkillsComponent implements OnInit {
    
     this.elements =[];
     this.skills=[
-      new Skill("assets/img/Group 205.png","HTML/CSS",
+      new Skill("assets/img/html-logo-new.png","HTML",
       " static but neatly designed webpages like KochWelt and sakuraRamen."),
-      new Skill("assets/img/java script.png","JavaScript",
+      new Skill("assets/img/css-logo.png","CSS",
+      " static but neatly designed webpages like KochWelt and sakuraRamen."),
+      new Skill("assets/img/js-logo-new.png","JavaScript",
       "Join: project manegment tool,El-Pollo-loco: jump and run canvas game,tic tac toe"),
-      new Skill("assets/img/angular.png","Angular",
+      new Skill("assets/img/angular-logo-new.svg","Angular",
       "Ring of fire: popular drinking game,myPage: code of this very site"),
       new Skill("assets/img/ts-logo-128.png","TypeScript",
       "Ring of fire: popular drinking game,Ring of fire multiplayer with firebase,myPage: code of this very site"),

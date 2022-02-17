@@ -233,7 +233,7 @@ $color-black: #000000;
         right: 0;
         bottom: 0;
         background:$color-black;
-        animation: typingAnimation 1s steps(6) 1s forwards;
+        animation: typingAnimation 0.5s steps(6) 1s forwards;
     }
     &::after{
         content:'';
@@ -245,7 +245,7 @@ $color-black: #000000;
         bottom: 0;
         width: .250em;
         background:black;
-        animation: typingAnimation 1s steps(6) 1s forwards,
+        animation: typingAnimation 0.5s steps(6) 1s forwards,
         blinkAnimationOne 650ms steps(6) 3 backwards;
 
     }
@@ -265,7 +265,7 @@ $color-black: #000000;
         right: 0;
         bottom: 0;
         background:$color-black;
-        animation: typingAnimation 2s steps(12) 2s forwards;
+        animation: typingAnimation 0.8s steps(12) 1.5s forwards;
     }
     &::after{
         content:'';
@@ -276,8 +276,8 @@ $color-black: #000000;
         bottom: 0;
         width: .250em;
         background:$color-black;
-        animation: typingAnimation 2s steps(12) 2s forwards,
-        blinkAnimationSec 650ms steps(12) 7  backwards;
+        animation: typingAnimation 0.8s steps(12) 1.5s forwards,
+        blinkAnimationSec 650ms steps(12) 4  backwards;
 
     }
 }
@@ -296,7 +296,7 @@ $color-black: #000000;
         right: 0;
         bottom: 0;
         background:$color-black;
-        animation: typingAnimation 3s steps(19) 4s forwards;
+        animation: typingAnimation 1.3s steps(19) 2.2s forwards;
     }
     &::after{
         content:'';
@@ -307,8 +307,8 @@ $color-black: #000000;
         bottom: 0;
         width: .250em;
         background:$color-black;
-        animation: typingAnimation 3s steps(19) 4s forwards,
-        blinkAnimationSec 650ms steps(19) 12 backwards;
+        animation: typingAnimation 1.3s steps(19) 2.2s forwards,
+        blinkAnimationSec 650ms steps(19) 8 backwards;
 
     }
 }

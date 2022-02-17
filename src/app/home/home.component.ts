@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   slideIn(): void {
     const appearOptions={
       threshold:0 ,
-      rootMargin: "0px 0px -300px 0px",
+      rootMargin: "0px 0px -200px 0px",
     };
     const appearOnScroll= new IntersectionObserver((entries,appearOnScroll)=>{
       entries.forEach(entry=>{

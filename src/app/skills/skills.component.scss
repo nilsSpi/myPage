@@ -113,14 +113,15 @@ $color-black: #000000;
                     font-weight: bold;
                 }
                 .skill-image{
-                    background-color: $color-secondary;
+                    background-color: white;
                     position: absolute;
                     top: -15%;
-                    border: 2px solid rgba($color-secondary,0.8);
+                    border: 2px solid rgba(white,0.8);
                     border-radius: 100%;
                     height: 50px;
                     width: 50px;
                     box-shadow: 0 5px 10px 5px #00000026;
+                    object-fit: cover;
                 }
             }
         } 
@@ -194,6 +195,21 @@ $color-black: #000000;
     }
 }
 
+
+@media (max-width: 565px) {
+    .skills-container{
+          #skills-content {
+          .wrapper {
+         .skill-container{
+        width: 120px !important;
+    }
+    }
+    }
+    }
+  
+  
+   
+}
 
 
 
