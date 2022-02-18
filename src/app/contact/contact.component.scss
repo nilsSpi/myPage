@@ -17,6 +17,7 @@ $color-black: #000000;
         bottom: 5%;
         border: 1px solid $color-primary;
         padding:16px;
+        max-width: 90%;
 
         span{
             color:white;
@@ -119,4 +120,12 @@ $color-black: #000000;
     #contact-content {
         width: 85vw !important;
     }
+}
+
+
+
+@media (max-width: 500px) {
+   .popUp-container{
+       bottom: 0 !important;
+   }
 }
