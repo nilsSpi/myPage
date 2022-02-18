@@ -71,7 +71,7 @@ public aboutText: string="I like nature related activities like hiking and climb
   slideIn(): void {
     const appearOptions={
       threshold:0 ,
-      rootMargin: "-100px 0px -100px 0px",
+      rootMargin: "100px 1500px 100px 1500px",
     };
     const appearOnScroll= new IntersectionObserver((entries,appearOnScroll)=>{
       entries.forEach(entry=>{
@@ -86,15 +86,30 @@ public aboutText: string="I like nature related activities like hiking and climb
       });
     },appearOptions);
 
-
-
-
+    ////////////////////////////////
+    const fadeOptions={
+      threshold:0 ,
+      rootMargin: "-100px 0px -100px 0px",
+    };
+    const fadeOnScroll= new IntersectionObserver((entries,fadeScroll)=>{
+      entries.forEach(entry=>{
+        if (!entry.isIntersecting){
+          entry.target.classList.remove('appear');
+          return;}
+        else{
+          
+          entry.target.classList.add('appear');
+         // appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },fadeOptions);
+    ////////////////////////////////
     this.sliders.forEach(slider=>{
      appearOnScroll.observe(slider);
     });
 
     this.faders.forEach(fader=>{
-      appearOnScroll.observe(fader);
+      fadeOnScroll.observe(fader);
     })
   }
 

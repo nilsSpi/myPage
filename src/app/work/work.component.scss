@@ -249,16 +249,19 @@ $color-black: #000000;
 
 .from-left {
     transform: translateX(-100%);
+    opacity: 0;
 }
 .from-right {
     transform: translateX(100%);
+    opacity: 0;
 }
 
 .from-left,
 .from-right{
-    transition:transform 400ms ease-in;
+    transition:transform 400ms ease-in,opacity 225ms ease-in;
 }
 
 .appear{
     transform: translateX(0) !important;
+    opacity: 1;
 }

@@ -9,9 +9,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
 
-  
+  popUp!:HTMLElement;
 
   ngOnInit(): void {
+    this.popUp = <HTMLFormElement>document.getElementById('popUp');
   }
 
   resetForm(): void {
@@ -47,9 +48,12 @@ export class ContactComponent implements OnInit {
         .subscribe({
           next: (response) => console.log(response),
           error: (error) => console.error(error),
-          complete: () => console.info('send post complete'),
+          complete: () => this.popUp.classList.remove('opa-zero') ,
         });
         ngForm.reset();
+        setTimeout(() =>{
+          this.popUp.classList.add('opa-zero')
+        },3000)
     }
   }
 }

@@ -43,7 +43,7 @@ nav{
                 color: $color-primary;
             }
             &:hover{
-                animation: borderSec 2s ease-in-out;
+                animation: borderSec 225ms ease-in-out;
                 animation-fill-mode: forwards;
             }
         }

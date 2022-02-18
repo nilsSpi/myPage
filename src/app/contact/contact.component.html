@@ -1,4 +1,11 @@
 <section class="contact-container" id="contact-container">
+     <!--  working here  -->
+    <div class="popUp-container opa-zero" id="popUp">
+        <span>
+            Your Email was successfully sent! Thanks for your message.
+        </span>
+    </div>
+     <!--  old content  -->
     <div id="contact-content" class="box">
         <div class="contact-text-container">
             <h2>CONTACT ME</h2>
@@ -22,7 +29,7 @@
             [(ngModel)]="contact.message"
             name="message"
             #message="ngModel" id="message" name="message" type="text" placeholder="Enter your message"></textarea>
-            <button  class="buttonPrimary"type="submit">Send</button>
+            <button  class="buttonPrimary" type="submit" >Send</button>
         </form>
       
     </div>

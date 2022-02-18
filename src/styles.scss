@@ -27,7 +27,7 @@ $color-black: #000000;
         right: 0;
         bottom: 0;
         background:$color-grey;
-        animation: typingAnimation 6s steps(80) 1s forwards;
+        animation: typingAnimation 2s steps(80) 0.5s forwards;
     }
     &::after{
         content:'';
@@ -38,7 +38,7 @@ $color-black: #000000;
         bottom: 0;
         width: .250em;
         background:$color-secondary;
-        animation: typingAnimation 6s steps(80) 1s forwards,
+        animation: typingAnimation 2s steps(80) 0.5s forwards,
         blinkAnimation 650ms steps(80) infinite;
 
     }
@@ -83,14 +83,14 @@ $color-black: #000000;
 
     &:hover{
 
-        animation: primaryButtonHover 1.5s ease-in-out;
+        animation: primaryButtonHover 125ms ease-in-out;
         color: white;
         background-color: rgba($color-secondary,0.6);
         border: 2px solid white;
         cursor: pointer;
 
         a{
-            animation: primaryAnchorHover 1.5s ease-in-out;
+            animation: primaryAnchorHover 125ms ease-in-out;
             background-color: rgba($color-secondary,0.6);
             background-color:transparent;
             color:white !important;
@@ -145,14 +145,14 @@ $color-black: #000000;
 
     &:hover{
 
-        animation: secondaryButtonHover 1.5s ease-in-out;
+        animation: secondaryButtonHover 125ms ease-in-out;
         color: white;
         background-color: rgba($color-primary,0.6);
         border: 2px solid white;
         cursor: pointer;
 
         a{
-            animation: secondaryAnchorHover 1.5s ease-in-out;
+            animation: secondaryAnchorHover 125ms ease-in-out;
             background-color: rgba($color-primary,0.6);
             background-color:transparent;
             color:white !important;

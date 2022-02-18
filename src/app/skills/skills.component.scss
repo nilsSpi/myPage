@@ -52,7 +52,7 @@ $color-black: #000000;
                     right: 0;
                     bottom: 0;
                     background:$color-grey;
-                    animation: typingAnimation 10s steps(50) 1s forwards;
+                    animation: typingAnimation 2s steps(50) 1s forwards;
                 }
                 &::after{
                     content:'';
@@ -63,7 +63,7 @@ $color-black: #000000;
                     bottom: 0;
                     width: .250em;
                     background:$color-secondary;
-                    animation: typingAnimation 10s steps(50) 1s forwards,
+                    animation: typingAnimation 2s steps(50) 1s forwards,
                     blinkAnimation 650ms steps(50) infinite;
     
                 }
