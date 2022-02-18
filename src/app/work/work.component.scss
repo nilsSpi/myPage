@@ -118,6 +118,10 @@ $color-black: #000000;
         }
     }
 }
+#aboutMe-anchor{
+    position: absolute;
+    bottom: 110px;
+}
 
 
 .toggeld{
@@ -209,6 +213,10 @@ $color-black: #000000;
     #work-container{
         height: unset !important;
         padding-bottom: 5% !important;
+
+        #aboutMe-anchor{
+            bottom:50px;
+        }
 
         #work-content{
             height: unset !important;

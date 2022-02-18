@@ -129,6 +129,12 @@ $color-black: #000000;
 
 }
 
+#work-anchor{
+    position: absolute;
+    bottom: 110px;
+    
+}
+
 @keyframes typingAnimation {
     to {
         left: 100%;
@@ -198,6 +204,9 @@ $color-black: #000000;
 
 @media (max-width: 565px) {
     .skills-container{
+        #work-anchor{
+            bottom: 50px;
+        }
           #skills-content {
           .wrapper {
          .skill-container{

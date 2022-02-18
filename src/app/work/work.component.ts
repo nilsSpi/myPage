@@ -52,7 +52,7 @@ export class WorkComponent implements OnInit {
     new Project("assets/img/join.png","Join",
     "project manegment tool: Allows a group of users to create and assign tasks, check the progress via an user specific kanban board and organize the taskmanager with flags.",
     "https://nils-spiller.de/projects/join/index.html"),
-    new Project("assets/img/elPolloLoco.png","El Pollo Loco",
+    new Project("assets/img/elPolloLoco-inbeded.png","El Pollo Loco",
     " plane Javascript jump and run game: Randomization give you a slightly different game every reload. I hope you got your gamerpants on, this can be a hectic walkthrough. Good luck!",
     "https://nils-spiller.de/projects/elPolloLoco/index.html"),
     new Project("assets/img/kochWelt.png","Kochwelt",
