@@ -52,6 +52,7 @@ $color-black: #000000;
             .work-plate{
                 position: relative;
                 margin: 8px;
+                padding:8px;
                 .work-overlay{
                     position: absolute;
                 }
@@ -59,6 +60,7 @@ $color-black: #000000;
                     width: 300px;
                     height: 300px;
                     object-fit: cover;
+                    box-shadow: 5px 5px 21px -6px #ffffff91;
                
                 }                      
 
@@ -233,6 +235,10 @@ $color-black: #000000;
             #render-container{
                 flex-wrap: unset !important;
                 flex-direction: column;
+
+                .work-plate{
+                    padding: 0;
+                }
             }
         }
     }

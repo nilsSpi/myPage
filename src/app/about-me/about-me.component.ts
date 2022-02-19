@@ -44,13 +44,13 @@ public aboutText: string="I like nature related activities like hiking and climb
 
     },
     {
-      url:"assets/img/heart-line.png",
+      url:"assets/img/walk-line.png",
       headline:"Getting a road map",
       text:"I decided to commit to front end development. I became a student of developerAkademie a german coding bootcamp, to get a professinal road map of front end development."
 
     },
     {
-      url:"assets/img/walk-line.png",
+      url:"assets/img/flight-takeoff-line.png",
       headline:"Walking up the road",
       text:"The bootcamp was an awesome experiece. I loved to build team and solo projects while having the pleasure of an creative and active community."
 

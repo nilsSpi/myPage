@@ -21,7 +21,10 @@
 
         <div class="stepsContainer">
             <div *ngFor="let step of steps" class="step fader">
-                <img [src]="step.url" alt="">
+                <div class="imgContainer">
+                     <img [src]="step.url" alt="">
+                </div>
+               
                 <span [innerHTML]="step.headline"></span>
                 <p [innerHTML]="step.text"></p>
             </div>

@@ -1,0 +1,23 @@
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        margin-right:16px;
+        padding: 8px;
+    }
+   
+} 
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+p{
+    text-align: center;
+    margin: unset;
+}
