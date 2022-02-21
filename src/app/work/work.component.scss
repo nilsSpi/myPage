@@ -239,7 +239,8 @@ $color-black: #000000;
                 flex-direction: column;
 
                 .work-plate{
-                    padding: 0;
+                    padding: 8px;
+                    
                 }
             }
         }
@@ -250,6 +251,13 @@ $color-black: #000000;
             width:300px !important;
             height: 300px !important;
         }
+    }
+}
+
+@media (max-width: 330px) {
+    img{
+        width:280px !important;
+        height: 280px !important;
     }
 }
 
