@@ -28,6 +28,8 @@ $color-black: #000000;
                 p{
                     color: white;
                     font-size: 42px;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
                 }
                 .nameColor{
                     color: $color-primary;
@@ -50,8 +52,8 @@ $color-black: #000000;
             position: relative;
             margin-top:5%;
             margin-bottom:5%;
-            width: 575px;
-            height: 575px;
+            width: 400px;
+            height: 400px;
             align-self: center;
             border-radius: 100%;
             background-color:$color-black;
@@ -113,23 +115,13 @@ $color-black: #000000;
 @media (max-width: 1300px) {
     .flipImage-container{
       
-        height: 520px !important;
-        width: 520px !important;
-    }
-}
-@media (max-width: 1150px) {
-    .flipImage-container{
-      
-        height: 480px !important;
-        width: 480px !important;
+        height: 350px !important;
+        width: 350px !important;
     }
 }
 
 @media (max-width: 1100px) {
     .flipImage-container{
-      
-        height: 400px !important;
-        width: 400px !important;
         margin-left: 2rem;
         margin-top: 2rem;
     }

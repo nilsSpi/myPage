@@ -7,10 +7,11 @@
 
 
         <div class="button-container from-left slider">
-            <button id="pinned" (click)="showPinned()" class="buttonSecondary" [ngClass]="{'toggeld': pinnedIsShown}">Pinned</button>        
+          <!--  <button id="pinned" (click)="showPinned()" class="buttonSecondary" [ngClass]="{'toggeld': pinnedIsShown}">Pinned</button> -->
+                  <button id="all" (click)="showAll()" class="buttonSecondary" [ngClass]="{'toggeld': pinnedIsShown}">All</button>  
             <button id="angular" (click)="showAngular()" class="buttonSecondary">Angular</button>
             <button id="js" (click)="showJs()" class="buttonSecondary">JavaScript</button>
-            <button id="all" (click)="showAll()" class="buttonSecondary">All</button>     
+              
         </div>
 
         <div *ngIf="pinnedIsShown" id="render-container" class=" from-right slider">      
@@ -19,6 +20,7 @@
                     <h4 class="hide" [innerHTML]="project.header"></h4>
                     <p class="hide" [innerHTML]="project.description"></p>
                    <a class="hide" [href]="project.href" target="_blank">See this project</a> 
+                   <a class="hide" [href]="project.gitHub" target="_blank">See project code</a>
                 </div>
                 <img src="{{ project.src }}" alt="">
             </div> 
@@ -30,6 +32,7 @@
                     <h4 class="hide" [innerHTML]="project.header"></h4>
                     <p class="hide" [innerHTML]="project.description"></p>
                    <a class="hide" [href]="project.href" target="_blank">See this project</a> 
+                    <a class="hide" [href]="project.gitHub" target="_blank">See project code</a>
                 </div>
                 <img src="{{ project.src }}" alt="">
             </div> 
@@ -40,7 +43,8 @@
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>
                         <p class="hide" [innerHTML]="project.description"></p>
-                        <button class="hide"><a [href]="project.href" target="_blank">See this project</a></button>
+                        <a class="hide" [href]="project.href" target="_blank">See this project</a>
+                        <a class="hide" [href]="project.gitHub" target="_blank">See project code</a>
                     </div>
                     <img src="{{ project.src }}" alt="">
                 </div>
@@ -51,7 +55,8 @@
                     <div class="work-overlay">
                         <h4 class="hide" [innerHTML]="project.header"></h4>
                         <p class="hide" [innerHTML]="project.description"></p>
-                        <button class="hide"><a [href]="project.href" target="_blank">See this project</a></button>
+                        <a class="hide" [href]="project.href" target="_blank">See this project</a>
+                        <a class="hide" [href]="project.gitHub" target="_blank">See project code</a>
                     </div>
                     <img src="{{ project.src }}" alt="">
                 </div>

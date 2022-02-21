@@ -19,7 +19,7 @@ class step {
 })
 export class AboutMeComponent implements OnInit {
 public imgSrc: string="assets/img/profilePic2.jpg";
-public aboutText: string="I like nature related activities like hiking and climbing. Furthermore I am an active chess player and play for 5 years in the Hamburger Chess Club."+
+public aboutText: string="I like nature related activities like hiking and climbing. Furthermore I am an active chess player and play for 5 years in the Hamburger Chess Club."+" "+
 "Feel free to challenge my lichess alter ego Slin in the realm of 64 squares, if you are brave enough.";
   aboutInfo={
     url : this.imgSrc,

@@ -74,14 +74,14 @@ $color-black: #000000;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        animation: animateOverlay 1s linear;
+                        animation: animateOverlay 225ms linear;
                         height:100%;
-                        width: 100%;
+                        width:calc(100% - 16px);
                      
                         background-color: rgba($color-black,0.8);
 
                         h4{
-                            animation: animateOverlayText 1s ease-in-out;
+                            animation: animateOverlayText 225ms ease-in-out;
                             display: unset !important;
                             color: $color-primary;
                             background-color: transparent;
@@ -90,17 +90,19 @@ $color-black: #000000;
                             text-decoration-thickness: 3px;
                         }
                         p{
-                            animation: animateOverlayText 1s ease-in-out;
+                            animation: animateOverlayText 225ms ease-in-out;
                             display: unset !important;
                             color: white;
                             background-color: transparent;
                             text-align: center;
                         }
                             a{
-                                animation: animateOverlayText 1s ease-in-out;
+                                animation: animateOverlayText 225ms ease-in-out;
                                 display: unset !important;
                                 color: $color-secondary;
                                 text-decoration-thickness: 3px;
+                                
+                                margin-bottom:8px;
                             }
                     //button {
                           //  animation: animateOverlayButton 1s ease-in-out;
