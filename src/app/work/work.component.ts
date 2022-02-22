@@ -27,7 +27,7 @@ export class WorkComponent implements OnInit {
   public angularProjects: Array<Project> = [
     new Project("./assets/img/ringoffire-inbed .png","Ring of fire","implementation of the popular drinking game",
     "https://nils-spiller.de/projects/ring-of-fire/index.html",""),
-    new Project("./assets/img/simpleCRM_new.png","SimpleCRM","a simple customer relationship mangemant tool. data transfer with firebase","https://nils-spiller.de/projects/simple-crm/index.html",
+    new Project("./assets/img/simpleCRM_new.png","SimpleCRM","a simple customer relationship mangemant tool. data transfer with firebase","https://simplecrm-a1b43.web.app/",
     "https://github.com/nilsSpi/simpleCRM")
   ];
 
@@ -52,7 +52,7 @@ export class WorkComponent implements OnInit {
     "https://nils-spiller.de/projects/kochWelt/prod/index.html",""),
     new Project("./assets/img/ringoffire-inbed .png","Ring of fire","implementation of the popular drinking game",
     "https://nils-spiller.de/projects/ring-of-fire/index.html",""),
-    new Project("./assets/img/simpleCRM_new.png","SimpleCRM","a simple customer relationship mangemant tool. data transfer with firebase","https://nils-spiller.de/projects/simple-crm",
+    new Project("./assets/img/simpleCRM_new.png","SimpleCRM","a simple customer relationship mangemant tool. data transfer with firebase","https://simplecrm-a1b43.web.app/",
     "https://github.com/nilsSpi/simpleCRM")
   ];
 
